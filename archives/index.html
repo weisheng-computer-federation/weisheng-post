@@ -1,548 +1,575 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Head tag -->
 <head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="微笙计协收集的报刊类文章站点">
-    <meta name="keyword" content>
-    <link rel="shortcut icon" href="/img/favicon.ico">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="baidu-site-verification" content>
+  <meta name="google-site-verification" content>
+  <meta name="msvalidate.01" content>
+  <meta name="360-site-verification" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- if page has tags, then add tags to keyword -->
+  
+  
+  <meta name="keywords" content=",">
+  <!-- page.description has higher priority -->
+  <meta name="description" content="微笙计协收集的报刊类文章站点">
+  <link rel="shortcut icon" href="/">
+  <title>
+    
+    微笙文章站
+    
+  </title>
 
-    <title>
-        
-        
-        
-    </title>
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/aircloud.css">
-    <link rel="stylesheet" href="/css/gitment.css">
-    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
-    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
-    <!-- ga & ba script hoook -->
-    <script></script>
+  <link rel="canonical" href="/archives/">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/markdown.css">
+  <!-- Pygments Highlight CSS -->
+  <link rel="stylesheet" href="/css/highlight.css">
+  <link rel="stylesheet" href="/css/geektutu.css">
+  <!-- global function -->
+  <script>
+    window.globalAddScript = function (url, onload, onerror) {
+      var s = document.createElement('script');
+      s.src = url;
+      onload && (s.onload = onload);
+      onerror && (s.onerror = onerror);
+      document.body.appendChild(s);
+    }
+    window.globalAddCss = function (url) {
+      var s = document.createElement('link');
+      s.rel = 'stylesheet';
+      s.href = url;
+      document.body.appendChild(s);
+    }
+    window.getPosition = function (ele) {
+      var x = 0, y = 0;
+      while (ele) {
+        x += (ele.offsetLeft - ele.scrollLeft + ele.clientLeft);
+        y += (ele.offsetTop - ele.scrollTop + ele.clientTop);
+        ele = ele.offsetParent;
+      }
+      return { x: x, y: y };
+    }
+    window.getDom = function (str) { return document.querySelector(str) }
+  </script>
+  <!-- google ad -->
+  
 </head>
 
 <body>
-
-<div class="site-nav-toggle" id="site-nav-toggle">
-    <button>
-        <span class="btn-bar"></span>
-        <span class="btn-bar"></span>
-        <span class="btn-bar"></span>
-    </button>
-</div>
-
-<div class="index-about">
-    <i>  </i>
-</div>
-
-<div class="index-container">
-    
-    <div class="index-left">
+    <header class="gkt-header col-xs-12 padding-0">
+    <div id="gkt-nav" class="gkt-header-container">
+        <a href="/" class="gkt-header-title float-left">
+            <img class="float-left" src="/" alt="">
+            <span>微笙文章站</span>
+        </a>
+        <nav class="gkt-header-nav text-right">
+            <ul>
+                <li><a class="hidden-xs" href="/">主页</a></li>
+                <li><a href="/series/">专题</a></li>
+                <li><a href="/archives/">归档</a></li>
+                <li><a href="/post/link.html">友链</a></li>
+                <li><a href="/post/about.html">留言</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="gkt-cate-nav" class="gkt-header-container hidden-xs">
         
-<div class="nav" id="nav">
-    <div class="avatar-name">
-        <div class="avatar ">
-            <img src="/" />
-        </div>
-        <div class="name">
-            <i>weisheng-computer-federation</i>
-        </div>
+        <nav class="gkt-header-nav float-left">
+            <ul>
+                
+                
+            </ul>
+        </nav>
     </div>
-    <div class="contents" id="nav-content">
-        <ul>
-            <li >
-                <a href="/">
-                    <i class="iconfont icon-shouye1"></i>
-                    <span>HOME</span>
-                </a>
-            </li>
-            <li >
-                <a href="/tags">
-                    <i class="iconfont icon-biaoqian1"></i>
-                    <span>TAGS</span>
-                </a>
-            </li>
-            <li  class=active >
-                <a href="/archives">
-                    <i class="iconfont icon-guidang2"></i>
-                    <span>ARCHIVES</span>
-                </a>
-            </li>
-            <li >
-                <a href="/about/">
-                    <i class="iconfont icon-guanyu2"></i>
-                    <span>ABOUT</span>
-                </a>
-            </li>
-            
-        </ul>
-    </div>
-    
-</div>
-
-
-<div class="search-field" id="search-field">
-    <div class="search-container">
-        <div class="search-input">
-            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
-            <input id="search-input"/>
-            <span id="begin-search">search</span>
-        </div>
-        <div class="search-result-container" id="search-result-container">
-
-        </div>
-    </div>
-</div>
-
-        <div class="index-about-mobile">
-            <i>  </i>
-        </div>
-    </div>
-    
-    <div class="index-middle">
+</header>
+<div style="height: 44px"></div>
+<div class="hidden-xs" style="height: 44px"></div>
+<script>
+    (function () {
+        window.addEventListener('scroll', function () {
+            if (window.innerWidth < 768) {
+                return;
+            }
+            var nav = document.querySelector('#gkt-nav');
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            scrollTop > 50 && (nav.classList.add('hide'));
+            scrollTop <= 50 && (nav.classList.remove('hide'));
+        });
+        var cateNavs = document.querySelectorAll('#gkt-cate-nav>nav>ul>li');
+        [].slice.call(cateNavs).forEach(function (item) {
+            var sub = item.querySelector('.gkt-sub-cate');
+            if (!sub) return;
+            item.addEventListener('mouseenter', function (e) { sub.style.display = 'block'; }, false);
+            item.addEventListener('mouseleave', function (e) { sub.style.display = 'none'; }, false);
+        })
+    })();
+</script>
+    <!-- Main Content -->
+    <div class="main-container">
         <!-- Main Content -->
-        
+<main class="col-xs-12 padding-0 markdown-it">
+    <!-- Post Container -->
+    
+    <style>
+        @media (min-width: 1200px) {
+            .main-container {
+                width: 1000px !important;
+            }
+        }
 
+        #gkt-index-sidebar {
+            border-left: 1px solid #eaecef;
+        }
 
-<!-- 归档列表 -->
+        #gkt-index-sidebar section {
+            margin-bottom: 8px;
+            padding: 10px;
+        }
 
-<div class="archives-container">
+        .index-container {
+            padding: 20px;
+        }
+    </style>
+    <div class="col-xs-12 padding-0">
+        <div class="col-xs-12 col-md-8 bg-white index-container box-shadow">
+            
+<!-- Main Content -->
+<div class="post-list">
+    
 
-<div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2019">
-                    <span class="tag-text">2019</span>
-                </span>
+    <!-- 归档列表 -->
     <ul>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报地铁行业里，如何做一名合格的产品经理/">
-                        <span>
-                            知乎日报|地铁行业里，如何做一名合格的产品经理
-                        </span>
+        <li class="post-item-parent post-item-color-4">
+            <a href="/archives/#2019" class="post-text-parent" id="2019">
+                2019
             </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报长期服用维生素 C 是否会美白？/">
-                        <span>
-                            知乎日报|长期服用维生素 C 是否会美白？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报地铁行业里，如何做一名合格的产品经理/">知乎日报|地铁行业里，如何做一名合格的产品经理</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报如何理解「当科学家们爬上一个又一个的山顶时，总发现佛学大师们早已在那里等着了」？/">
-                        <span>
-                            知乎日报|如何理解「当科学家们爬上一个又一个的山顶时，总发现佛学大师们早已在那里等着了」？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报长期服用维生素 C 是否会美白？/">知乎日报|长期服用维生素 C 是否会美白？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报中国的南北差异具体体现在哪些方面？/">
-                        <span>
-                            知乎日报|中国的南北差异具体体现在哪些方面？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报如何理解「当科学家们爬上一个又一个的山顶时，总发现佛学大师们早已在那里等着了」？/">知乎日报|如何理解「当科学家们爬上一个又一个的山顶时，总发现佛学大师们早已在那里等着了」？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报小事 · 苦命人/">
-                        <span>
-                            知乎日报|小事 · 苦命人
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报中国的南北差异具体体现在哪些方面？/">知乎日报|中国的南北差异具体体现在哪些方面？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报我国科学家实现世界首次原子级石墨烯可控折叠，会给业界带来什么改变？/">
-                        <span>
-                            知乎日报|我国科学家实现世界首次原子级石墨烯可控折叠，会给业界带来什么改变？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报小事 · 苦命人/">知乎日报|小事 · 苦命人</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报为什么几乎所有的动物都是肚子上的毛色浅于背上的？/">
-                        <span>
-                            知乎日报|为什么几乎所有的动物都是肚子上的毛色浅于背上的？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报我国科学家实现世界首次原子级石墨烯可控折叠，会给业界带来什么改变？/">知乎日报|我国科学家实现世界首次原子级石墨烯可控折叠，会给业界带来什么改变？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报研究首次发现人类可以「返老还童」，长生不老离我们还有多远？/">
-                        <span>
-                            知乎日报|研究首次发现人类可以「返老还童」，长生不老离我们还有多远？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报为什么几乎所有的动物都是肚子上的毛色浅于背上的？/">知乎日报|为什么几乎所有的动物都是肚子上的毛色浅于背上的？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报离开表情包，我就不会聊天了/">
-                        <span>
-                            知乎日报|离开表情包，我就不会聊天了
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报研究首次发现人类可以「返老还童」，长生不老离我们还有多远？/">知乎日报|研究首次发现人类可以「返老还童」，长生不老离我们还有多远？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报小事 · 25 岁的年轻人，想清两件事/">
-                        <span>
-                            知乎日报|小事 · 25 岁的年轻人，想清两件事
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报离开表情包，我就不会聊天了/">知乎日报|离开表情包，我就不会聊天了</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报瞎扯 · 如何正确地吐槽/">
-                        <span>
-                            知乎日报|瞎扯 · 如何正确地吐槽
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报小事 · 25 岁的年轻人，想清两件事/">知乎日报|小事 · 25 岁的年轻人，想清两件事</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报库克称「目前 5G 还是有点超期」，该怎么理解？/">
-                        <span>
-                            知乎日报|库克称「目前 5G 还是有点超期」，该怎么理解？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报瞎扯 · 如何正确地吐槽/">知乎日报|瞎扯 · 如何正确地吐槽</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报这是个「马云退，阿里进」的故事/">
-                        <span>
-                            知乎日报|这是个「马云退，阿里进」的故事
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报库克称「目前 5G 还是有点超期」，该怎么理解？/">知乎日报|库克称「目前 5G 还是有点超期」，该怎么理解？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报为什么说年轻人千万不能碰盗墓？/">
-                        <span>
-                            知乎日报|为什么说年轻人千万不能碰盗墓？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报这是个「马云退，阿里进」的故事/">知乎日报|这是个「马云退，阿里进」的故事</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报如果计划一天镰仓自由行，该如何安排行程？/">
-                        <span>
-                            知乎日报|如果计划一天镰仓自由行，该如何安排行程？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报为什么说年轻人千万不能碰盗墓？/">知乎日报|为什么说年轻人千万不能碰盗墓？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报《名侦探柯南》按主线时间线来算，现在距离新一变成柯南过了多久？/">
-                        <span>
-                            知乎日报|《名侦探柯南》按主线时间线来算，现在距离新一变成柯南过了多久？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报如果计划一天镰仓自由行，该如何安排行程？/">知乎日报|如果计划一天镰仓自由行，该如何安排行程？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报喝牛奶会使皮肤变白吗？/">
-                        <span>
-                            知乎日报|喝牛奶会使皮肤变白吗？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报《名侦探柯南》按主线时间线来算，现在距离新一变成柯南过了多久？/">知乎日报|《名侦探柯南》按主线时间线来算，现在距离新一变成柯南过了多久？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报VIE 结构是什么？建立的过程中需要注意什么问题？/">
-                        <span>
-                            知乎日报|VIE 结构是什么？建立的过程中需要注意什么问题？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报喝牛奶会使皮肤变白吗？/">知乎日报|喝牛奶会使皮肤变白吗？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报速度提升四成的下一代 Wi-Fi 6 标准正式启用，会带来哪些影响？/">
-                        <span>
-                            知乎日报|速度提升四成的下一代 Wi-Fi 6 标准正式启用，会带来哪些影响？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报VIE 结构是什么？建立的过程中需要注意什么问题？/">知乎日报|VIE 结构是什么？建立的过程中需要注意什么问题？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报如何评价周杰伦发布的新歌《说好不哭》？/">
-                        <span>
-                            知乎日报|如何评价周杰伦发布的新歌《说好不哭》？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报速度提升四成的下一代 Wi-Fi 6 标准正式启用，会带来哪些影响？/">知乎日报|速度提升四成的下一代 Wi-Fi 6 标准正式启用，会带来哪些影响？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报沐浴露是不是新世纪的一场营销骗局？/">
-                        <span>
-                            知乎日报|沐浴露是不是新世纪的一场营销骗局？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报如何评价周杰伦发布的新歌《说好不哭》？/">知乎日报|如何评价周杰伦发布的新歌《说好不哭》？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报从《绀青之拳》到《柯南》原点：剧场版系列的时过境迁与一脉相承/">
-                        <span>
-                            知乎日报|从《绀青之拳》到《柯南》原点：剧场版系列的时过境迁与一脉相承
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报沐浴露是不是新世纪的一场营销骗局？/">知乎日报|沐浴露是不是新世纪的一场营销骗局？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报中国篮协称「主教练李楠申请辞职」的消息不属实，你有什么想说的？/">
-                        <span>
-                            知乎日报|中国篮协称「主教练李楠申请辞职」的消息不属实，你有什么想说的？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报从《绀青之拳》到《柯南》原点：剧场版系列的时过境迁与一脉相承/">知乎日报|从《绀青之拳》到《柯南》原点：剧场版系列的时过境迁与一脉相承</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报对于工作 5 年以上的职场人来说，有哪些比工资低更危险的事？/">
-                        <span>
-                            知乎日报|对于工作 5 年以上的职场人来说，有哪些比工资低更危险的事？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报中国篮协称「主教练李楠申请辞职」的消息不属实，你有什么想说的？/">知乎日报|中国篮协称「主教练李楠申请辞职」的消息不属实，你有什么想说的？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-        <!-- <li class="listing-item">
-        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li> -->
-        <li >
-            <span>09-19</span>
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/09/19/知乎日报关于中国的年轻科学家，有哪些不为人知的故事？/">
-                        <span>
-                            知乎日报|关于中国的年轻科学家，有哪些不为人知的故事？
-                        </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报对于工作 5 年以上的职场人来说，有哪些比工资低更危险的事？/">知乎日报|对于工作 5 年以上的职场人来说，有哪些比工资低更危险的事？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
         </li>
         
-
+        <li>
+            <a class="post-item-title" href="/2019/09/19/知乎日报关于中国的年轻科学家，有哪些不为人知的故事？/">知乎日报|关于中国的年轻科学家，有哪些不为人知的故事？</a>
+            <span class="post-item-date">(Sep 19, 2019)</span>
+        </li>
+        
+        
     </ul>
 </div>
+        </div>
+        <div id="gkt-index-sidebar" class="hidden-xs hidden-sm col-md-4">
+            <section class="bg-white box-shadow"><style>
+    .gkt-summary {
+        border: 1px solid #DDDDDD;
+        border-radius: 3px;
+        padding: 5px;
+        width: 100%;
+    }
 
-</div>
 
-    </div>
-</div>
+    .gkt-summary nav {
+        overflow: hidden;
+    }
 
+    .gkt-summary nav a {
+        display: inline-block;
+        text-align: center;
+        color: #333;
+        font-size: 12px;
+    }
 
-<footer class="footer">
-    <ul class="list-inline text-center">
-        
-        
+    .gkt-summary nav span {
+        display: block;
+    }
 
-        
+    .gkt-summary nav .middle {
+        border-left: 1px solid #eaecef;
+        border-right: 1px solid #eaecef;
+    }
 
-        
+    .gkt-summary .number {
+        font-weight: bold;
+    }
 
-        
+    .gkt-summary .link-list {
+        margin-top: 5px;
+        margin-bottom: -5px;
+        padding-top: 7px;
+        border-top: 1px dashed #999;
+        display: flex;
+    }
 
-        
+    .gkt-summary .link-list a {
+        flex: 1;
+    }
 
-    </ul>
+    .gkt-summary .link-list img {
+        width: 25px;
+        height: 25px;
+    }
+</style>
+
+<div class="gkt-summary">
+    <nav>
+        <a href="/" class="col-xs-4">
+            <number class="number">25</number><span>文章</span>
+        </a>
+        <a href="/series" class="col-xs-4 middle">
+            <number class="number">0</number><span>专题</span>
+        </a>
+        <a href="/tags" class="col-xs-4">
+            <number class="number">1</number><span>标签</span>
+        </a>
+    </nav>
+
     
+</div></section>
+            <section class="bg-white box-shadow"><!-- Featured Tags -->
+<style>
+    #featured-tag .post-tag-item {
+        font-size: 12px;
+        line-height: 30px;
+        display: inline-block;
+        height: 30px;
+        margin: 5px 0px;
+        padding: 0 7px;
+        color: #333;
+        border-radius: 15px;
+        background: #f6f6f6;
+    }
+
+    #featured-tag .post-tag-item:hover {
+        color: #337ab7;
+    }
+</style>
+<div id="featured-tag">
+    
+    <a class="post-tag-item" href="/tags/#知乎日报" title="知乎日报"
+        rel="25">#知乎日报 (25) </a>
+    
+</div></section>
+            <section class="bg-white box-shadow text-center">
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+                
+
+                
+            </section>
+        </div>
+    </div>
+    
+</main>
+    </div>
+    <style>
+    img#go-top {
+        position: fixed;
+        bottom: 100px;
+        width: 50px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+</style>
+<img id="go-top" src="/icon/top.png" class="hidden-xs" style="display: none" />
+<script>
+    (function () {
+        var goTop = document.getElementById('go-top');
+        var mainContainer = document.querySelector('.main-container');
+        
+        goTop.addEventListener('click', function () {
+            window.scroll(0, 0);
+        }, false);
+        window.addEventListener('scroll', function () {
+            var right = document.body.offsetWidth - mainContainer.getBoundingClientRect().right;
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            goTop.style.right = right + 10 + 'px'
+            scrollTop > 700 && (goTop.style.display = "block");
+            scrollTop <= 700 && (goTop.style.display = "none");
+        });
+    })();
+</script>
+    <style>
+    #geektutu-click-img-container {
+        position: fixed;
+        left: 0;
+        top: 0;
+        text-align: center;
+        width: 100%;
+        display: none;
+        z-index: 9999;
+    }
+
+    #geektutu-click-img-container img {
+        object-fit: contain;
+        background: #eaecef;
+        padding: 15px;
+        border-radius: 10px;
+        height: auto;
+        width: auto;
+        vertical-align: middle;
+    }
+</style>
+
+
+<div id="geektutu-click-img-container">
+    <img src="" alt="Big Image">
+</div>
+
+<script>
+    (function () {
+        var container = document.querySelector('#geektutu-click-img-container')
+        var targetImg = container.querySelector('img')
+        var imgs = document.querySelectorAll('article img');
+        targetImg.addEventListener('click', function (e) {
+            container.style.display = 'none';
+            e && e.stopPropagation && e.stopPropagation();
+        }, false);
+
+        for (var i = 0; i < imgs.length; ++i) {
+            var img = imgs[i];
+            img.addEventListener('click', (function (src, rate) {
+                return function (e) {
+                    e && e.stopPropagation && e.stopPropagation();
+                    if (window.innerWidth < 980) {
+                        return
+                    }
+                    targetImg.style.height = targetImg.style.width = 'auto';
+                    if (window.innerWidth / window.innerHeight > rate) {
+                        targetImg.style.height = (window.innerHeight - 20) + 'px';
+                    } else {
+                        targetImg.style.width = (window.innerWidth - 20) + 'px';
+                    }
+                    container.style.height = window.innerHeight + 'px'
+                    container.style.lineHeight = window.innerHeight + 'px'
+                    container.style.display = 'block';
+                    targetImg.src = src;
+                };
+            }(img.src, img.width / img.height)), false)
+        }
+    })();
+</script>
+    <!-- Footer -->
+    <!-- Footer -->
+<style>
+    footer {
+        width: 100%;
+        line-height: 1.5;
+        padding: 20px;
+    }
+
+    footer a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .footer-hexo img {
+        height: 20px;
+        margin-bottom: -5px;
+    }
+
+    .footer-hexo a {
+        color: #337ab7;
+    }
+</style>
+<footer class="text-center col-xs-12">
     <p>
-        <span id="busuanzi_container_site_pv">
-            <span id="busuanzi_value_site_pv"></span>PV
-        </span>
-        <span id="busuanzi_container_site_uv">
-            <span id="busuanzi_value_site_uv"></span>UV
-        </span>
-        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+        <small>© 2019 - weisheng-computer-federation - </small>
+        <small>
+            <a target="_blank" rel="nofollow noopener" href="http://www.miitbeian.gov.cn/"></a>
+        </small>
+    </p>
+    <p class="footer-hexo">
+        <!-- 但若直接使用或修改主题，请务必保留这段声明 -->
+        <small>Powered by <a target="_blank" href="https://hexo.io">Hexo</a> | Theme
+            <a target="_blank" href="https://geektutu.com">Geektutu</a>
+            <a href="https://github.com/geektutu/hexo-theme-geektutu">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAYGBgYHBgcICAcKCwoLCg8ODAwODxYQERAREBYiFRkVFRkVIh4kHhweJB42KiYmKjY+NDI0PkxERExfWl98fKcBBgYGBgcGBwgIBwoLCgsKDw4MDA4PFhAREBEQFiIVGRUVGRUiHiQeHB4kHjYqJiYqNj40MjQ+TERETF9aX3x8p//CABEIACIAUAMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAAAQQFBwIDBgj/2gAIAQEAAAAA9KrHSgAYL5/z6zZGuJd12uugbhq3uKtmuRtix20IS7lTLAfAAAn/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oACAECEAAAAAAB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAgBAxAAAAAAAf/EADEQAAICAQIEBQEGBwAAAAAAAAECAwQFAAYREhORBxQhUlQxQVFic5KxJDJCYYGC0f/aAAgBAQABPwCFHnjWUzuvN6hV4cANSRLGjO9yRVUcSzMoA7jVXJYe5N0a2dhmk9kc0bN2GvLN8mbuNeWb5M3ca8s3yZu415Y/Jm7jXlm+TN3H/NeVPyZu40vOk3TZywK8wJ+v3EHVM/wsI/Dq2lrxN3Nnca16eti8chSAIoMbzByhMwP14kHVfwIiSaF5c96J6kwwCOTnHsYk8uvCrdmQy1TI4rJuz3cZLyGR/wCd4+YoOf8AEpUjXitubLYPG4paFsUxcuiGe7yc5gTW3LW44szXmobsi3Dhmic2+Z4+vCVH9CpraPiQ+QvbgTJrPFBWd5YpWrmNIIEXiRO32Pqt4p7cnfHk18lFBdmEVW1LVdIZGOrniTt6plrWKaO69yCykDRxwF+LMAewB0Txtr+Sf31VI8tEPw62fZt7N3Humtbpzz13ucX6CGSWMSuzpLyD1eNgeUka3PuvHbaxq3biTMHfkiSNCS78CwU+3Xg7Vu3MhuTcU6cq3Zemn3Eh2dv8Lzcut+29x1atKbHYqLJUhLwyNMwiZ3j9yDWOxUOV3tgb+3No5LDx1pi9+aeIwRlNY6bc+Jv+IFGrhLxtXJZ7VKcw81diiAAEn0JOrkWZyNfbEr0tz27UGQgkuGzXdIIvyowq99bRxk9ffO/L81SZBPZgEEroQroIxxMZOgeNsfkn99QypHGqO4Vl9CDrN4LDZkwyzyyQ2IgRHZrzGCZVP1XnQglT9oOtw4LC7iqV6uRkZoYpxKFSQpzFRw4EjVRMfSrQ1qqwxQxKFjjTgFUD7BoWYR6iVe+mtxt9Zwf9teaj4AdccPu5tedX5A/VrzUR+sy/q1CwksF19VEfDj/cnQRW+qg66cfsXtrpx+xe2unH7F7a6cfsXtrpx+xe2unH7F7a6cfsXtoxx+xe2gAAOA1//8QAFBEBAAAAAAAAAAAAAAAAAAAAMP/aAAgBAgEBPwB//8QAFBEBAAAAAAAAAAAAAAAAAAAAMP/aAAgBAwEBPwB//9k="
+                    alt="Github Star">
+            </a>
+        </small>
+    </p>
+    
+    
+
 </footer>
 
 
+<!-- Baidu Tongji -->
 
 
+
+
+
+    <script>
+        // 非本站网址，新开tab页签
+        (function () {
+            var stopBubble = function (e) {
+                e && e.stopPropagation && e.stopPropagation();
+            }
+            var links = document.querySelectorAll('a');
+            [].slice.call(links).forEach(function (item) {
+                if (item.href && item.href.indexOf(window.location.host) === -1) {
+                    item.target = '_blank'
+                }
+                // 阻止冒泡，不触发彩蛋。
+                item.addEventListener('click', stopBubble, false);
+            });
+            var article = document.querySelector('article');
+            article && article.addEventListener('click', stopBubble, false)
+        })();
+    </script>
+    
 </body>
-
-<script>
-    // We expose some of the variables needed by the front end
-    window.hexo_search_path = ""
-    window.hexo_root = "/"
-    window.isPost = false
-</script>
-<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
 
 </html>
