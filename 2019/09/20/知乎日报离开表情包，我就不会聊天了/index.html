@@ -1,39 +1,32 @@
-extends includes/layout
-
-block content
-
-    section#wrapper.post
-        article
-            header
-                h1!=page.title
-                h2.headline!=date(page.date, 'MMM DD, YYYY h:mm')
-                    |·
-                    |#{wordcount(page.content)} words
-                    |·
-                    |#{min2read(page.content)} minutes read
-                    span.tags
-
-            if toc(page.content)
-                div#toc!=toc(page.content,{list_number:false})
-
-            section#post-body!=page.content
-
-            - var prev = page.prev ? page.prev.path : false;
-            - var next = page.next ? page.next.path : false;
-            nav#post-nav
-                span.prev
-                    if page.prev
-                        a(href=url_for(prev))
-                            span.arrow ←
-                            | Newer Posts
-                span.next
-                    if page.next
-                        a(href=url_for(next))
-                            | Older Posts
-                            span.arrow →
-
-            include includes/comment.pug
-
-
-
-
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1"><title>知乎日报|离开表情包，我就不会聊天了</title><link rel="shortcut icon" href="/images/avatar.png"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.2.0/styles/github.min.css"><script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script></head><body><nav class="main-nav"><a href="/">Home</a><a href="/archives">Archives</a></nav><div class="profile"><section id="wrapper"><header id="header"><a href="/about"><img class="2x" id="avatar" src="/images/avatar.png"></a><h1>微笙文章站</h1><h2></h2></header></section></div><section class="post" id="wrapper"><article><header><h1>知乎日报|离开表情包，我就不会聊天了</h1><h2 class="headline">Sep 20, 2019 12:50·1.9k words
+·6 minutes read<span class="tags"></span></h2></header><div id="toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#离开表情包，我就不会聊天了"><span class="toc-text">离开表情包，我就不会聊天了</span></a></li></ol></div><section id="post-body"><h1 id="离开表情包，我就不会聊天了"><a href="#离开表情包，我就不会聊天了" class="headerlink" title="离开表情包，我就不会聊天了"></a>离开表情包，我就不会聊天了</h1><p><img src="https://pic1.zhimg.com/v2-0ab4a8091f582a6c41921db1a5b5b5d0.jpg" alt></p>
+<blockquote>
+<p>图片：京师心理大学堂 / 知乎</p>
+</blockquote>
+<div class="answer">
+<div class="meta">
+<img class="avatar" src="http://pic2.zhimg.com/v2-6efac062d385f2bbc70faedb52b2c531_is.jpg">
+<span class="author">京师心理大学堂，</span><span class="bio">打造最优质的心理科普平台</span>
+</div>
+<div class="content">
+<p>随着网络交流的普遍和各种 app 黑科技的发展，人们对网络表情的使用越来越频繁。发邮件时，句尾带个“:)”锻炼阅读对象颈椎；聊天时，各种形态的小圆脸络绎不绝；明学火了，各种表情包更是应运而生……那么表情符号是怎么来的？我们为什么会这么喜欢使用网络表情，表情符号的使用又会对我们产生什么样的影响呢？</p>
+<figure><img alt class="content-image" src="https://pic4.zhimg.com/v2-6758650ae127b5689172e7cd83d02573_b.jpg"></figure><p><strong><strong>表情符号的来源与发展</strong></strong></p>
+<p>表情符号的诞生来自于一则趣闻。1982 年，美国卡内基梅隆大学的一位教授在学校 BBS 的电子公告板上写下了第一个笑脸“:-)”，希望人们用来告诉别人哪些帖子是笑话，哪些不是：“我建议讲笑话的人能够用下面这样的字符顺序来标记：:-)侧过头去看。”于是，世界上的第一个表情符号就这样在网络中诞生了。</p>
+<p>因为这种传统表情符号都是基于 ASCII 字符所编写，阅览时则需横转九十度才能看明白，不太易于阅读和理解。因此另外一种横式的表情符号在日本慢慢进入人们的视野— —也就是现在被人们熟知的颜文字，其中有如 “^_^”、“*_*”等的笑脸，还有在面部表情旁加入其他符号作为修饰物，使表情变得更加丰富，如“-_-|||”仿照日本漫画表示尴尬等等。</p>
+<p>2011 年，随着苹果智能手机的广泛使用，Emoji 表情符号开始走红，就是我们熟悉的小黄脸，特点是通过编码来以小图片呈现的形式来进行情绪的传达。近年来中国更是流行起了一种表情包文化。表情包具体可以分为纯文字、纯图像和图文结合三种类型, 以幽默、搞怪、流行或经典的文字或图片元素展现制作者的情感诉求，吸引受众眼球，具有娱乐性、时效性和创造性三个基本特征。</p>
+<figure><img alt class="content-image" src="https://pic1.zhimg.com/v2-6a37db394bce4bc84e6ae584b6664cc0_b.jpg"></figure><p><strong><strong>网络表情符号的流行原因 </strong></strong></p>
+<p>在日常面对面沟通时，人们主要是通过有声语言来进行言语交际活动，同时，人们也会往往通过手势、语气、语调、变音、拉长音、面部表情、肢体语言等来辅助沟通，学术界将这些统称为<strong>可感知的非语言表达手段，即态势语言</strong>。已有研究证明，在互动交流中， 只有 7%的信息是通过语言来传递，而<strong>高达 55%的信息都是通过面部表情来传递的</strong><sup>[1]</sup>。</p>
+<p>非语言信息在成功的人际交流中占有很大比重，能够提供角色、情感等重要的补充信息，比如对方的衣着习惯可能体现了对方的职业、语音语速可能传达了对方的情绪等等，方面人们在面对面交流中适时调整自己的沟通策略。</p>
+<figure><img alt class="content-image" src="https://pic4.zhimg.com/v2-ae14553880eb3ec5be18f9f66c173d1f_b.jpg"></figure><p>然而在网络环境当中，不同于面对面的交际，人们需要依靠网络这个虚拟环境来进行交流，于是缺失了手势、语气等辅助沟通手段，从而导致了人们在网络中沟通不准确、不流畅，因此需要特定的态势语言来起到替代和补充的作用。而<strong>网络表情符号的使用能够更加生动形象的传递表达者的实时情感状态，从而一定程度上弥补了文字沟通中的情感局限性</strong>。</p>
+<p>另一方面，看到表情符号时，读者也会将表情符号作为情绪语气等非言语因素的态势语言来进行解读，就像面对面沟通时解读面部表情、肢体动作等。澳大利亚的心理学家 Owen Churches 发现，当我们在网络上看到笑脸时与我们看到真人笑脸时，大脑的相同区域会有一定程度的激活<sup>[2]</sup>。总体而言，网络环境中沟通时的态势语言缺失，一定程度上为表情符号在网络环境中提供了立足地。</p>
+<figure><img alt class="content-image" src="https://pic2.zhimg.com/v2-482f0c75fc4cdda31bc999f8b6365951_b.jpg"></figure><p><strong><strong>使用表情符号的影响</strong></strong></p>
+<p>除了上文提到的情感表达之外，<strong>表情符号能够为在虚拟环境中交流的双方建立一个温馨放松的氛围，方便双方交流</strong>。它可能起到交流中的“<strong>润滑剂</strong>”作用，一方面可弥补无话可说状况发生时的尴尬，另 一方面可引起交流双方的高度关注和兴趣。它还能影响人们的<strong>情绪感知</strong>，进而影响交流者的人际关系。Weiquan Wang<sup>[3]</sup>通过实验证明了<strong>积极的表情符号能够对感知到的负面情绪起到一定的缓解作用，并且能够增加对表情发送者的好感</strong>。</p>
+<p><strong>网络表情符号的使用还会影响阅读者对使用者热情的感知</strong>。多数研究者都认为，网络表情符号是对网络文辞语言的补充，它能使网络在线交流看起来更像现实场景中的人际交流，即增加人们的社会临场感<sup>[4]</sup>。代涛涛等研究者发现，网络表情符号的使用能提高对使用者的热情感知，且并不会影响对使用者的能力感知<sup>[5]</sup>。同时也有科学家请了“健康专家”和“电影批评家”与公众在线聊天，他们对部分公众使用表情符号，然后对另一部分公众避免使用。受访调查显示，<strong>网友普遍认为使用了表情符号的专家更加友好</strong>。</p>
+<p><strong>网络表情符号的使用还可能影响消费者的认知及认知能力</strong>。有研究表明，当网购评价中出现表情符时，消费者会觉得这个评价更可信，从而影响其最终购买决策<sup>[6]</sup>。表情符号还可以帮你更容易地记住阅读过的东西，有助于学习。Vandergriff 发现，当学生学习外国语时，表情符号的使用有能够有助于学生理解文本，提高学习效率<sup>[7]</sup>。Sodikin 发现，司机通常认为表情符号类型的交通标志非常易于理解，容易引起注意力的同时具有非常显著的可学习性<sup>[8]</sup>。</p>
+<figure><img alt class="content-image" src="https://pic2.zhimg.com/v2-8752ce8ad0bc5195e7da2dd850464755_b.gif"></figure><p>总体而言，使用表情符号，有助于沟通，获得对方的理解和支持。而且发一个表情符号可比打字讲一句话快多了，它能够让人非常快捷地进行有效的沟通，并且增添生动有趣的场景，实在是一个能够帮助所有人的好办法。如果你正为自己缺少沟通能力而苦恼，很想成为一个更加有趣的人，不妨在下次与人沟通时，尝试着适当加入一些表情符号，看看自己是否会有惊喜的收获呢？</p>
+<p class="ztext-empty-paragraph"> <br><br>作者：三千李<br><br>相关原文：<a class="wrap external" href="https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/NJGME6P5Ol4yovST-Z0FWA" rel="nofollow noreferrer" target="_blank">离开表情包，我就不会聊天了</a><br><br> </p>
+<div class="view-more"><a href="http://zhuanlan.zhihu.com/p/82512063" target="_self">查看知乎原文</a></div>
+</div>
+</div>
+<hr>
+</section><nav id="post-nav"><span class="prev"><a href="/2019/09/20/知乎日报研究首次发现人类可以「返老还童」，长生不老离我们还有多远？/"><span class="arrow">←</span>Newer Posts</a></span><span class="next"><a href="/2019/09/20/知乎日报小事 · 25 岁的年轻人，想清两件事/">Older Posts<span class="arrow">→</span></a></span></nav></article></section><footer id="footer"><div id="social"><a class="symbol" href="https://github.com/fuzhouxxdong"><i class="fa fa-github"></i></a></div><p class="small">© Copyright 2018 &nbsp;<i class="fa fa-heart" aria-hidden="true">&nbsp;Dxx</i></p><p class="small">Powered by &nbsp;<a href="https://hexo.io/">Hexo &nbsp;</a>Theme By &nbsp;<a href="https://github.com/fuzhouxxdong/hexo-theme-dxx">Dxx</a></p></footer><script>hljs.initHighlightingOnLoad();</script></body></html>

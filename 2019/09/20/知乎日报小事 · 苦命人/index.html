@@ -1,39 +1,43 @@
-extends includes/layout
-
-block content
-
-    section#wrapper.post
-        article
-            header
-                h1!=page.title
-                h2.headline!=date(page.date, 'MMM DD, YYYY h:mm')
-                    |·
-                    |#{wordcount(page.content)} words
-                    |·
-                    |#{min2read(page.content)} minutes read
-                    span.tags
-
-            if toc(page.content)
-                div#toc!=toc(page.content,{list_number:false})
-
-            section#post-body!=page.content
-
-            - var prev = page.prev ? page.prev.path : false;
-            - var next = page.next ? page.next.path : false;
-            nav#post-nav
-                span.prev
-                    if page.prev
-                        a(href=url_for(prev))
-                            span.arrow ←
-                            | Newer Posts
-                span.next
-                    if page.next
-                        a(href=url_for(next))
-                            | Older Posts
-                            span.arrow →
-
-            include includes/comment.pug
-
-
-
-
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1"><title>知乎日报|小事 · 苦命人</title><link rel="shortcut icon" href="/images/avatar.png"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.2.0/styles/github.min.css"><script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script></head><body><nav class="main-nav"><a href="/">Home</a><a href="/archives">Archives</a></nav><div class="profile"><section id="wrapper"><header id="header"><a href="/about"><img class="2x" id="avatar" src="/images/avatar.png"></a><h1>微笙文章站</h1><h2></h2></header></section></div><section class="post" id="wrapper"><article><header><h1>知乎日报|小事 · 苦命人</h1><h2 class="headline">Sep 20, 2019 12:50·694 words
+·2 minutes read<span class="tags"></span></h2></header><div id="toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#小事-·-苦命人"><span class="toc-text">小事 · 苦命人</span></a></li></ol></div><section id="post-body"><h1 id="小事-·-苦命人"><a href="#小事-·-苦命人" class="headerlink" title="小事 · 苦命人"></a>小事 · 苦命人</h1><p><img src="https://pic4.zhimg.com/v2-5b04882f31501d5195dc5c58f6523187.jpg" alt></p>
+<blockquote>
+<p>图片：terimakasih0 / CC0</p>
+</blockquote>
+<div class="answer">
+<div class="meta">
+<img class="avatar" src="http://pic4.zhimg.com/v2-05a9eb027f0b236b9e6a56e5363dae4b_is.jpg">
+<span class="author">跳舞，</span><span class="bio">是，我换头像了，咋地！是胖了，怎样！哼！</span>
+</div>
+<div class="content">
+<p>说个真事。</p>
+<p>有一次，我在公司办公室里加班写个本子，因为 dead line 要到了，所以开了个夜车，通宵奋战。</p>
+<p>早上四五点的时候，饿的不行，点了个外卖。</p>
+<p>点的什么就不细说了，但是因为熬了一夜，用脑也很多，血糖已经很低，就想喝一口可乐。点单的时候加了一瓶可乐。</p>
+<p>大约半个小时不到，送到。</p>
+<p>送来的外卖小哥，准确的来说，应该叫外卖大叔了，看上去年纪比我还大了两岁吧。</p>
+<p>我接过塑料袋打开检查食物，发现，食物都在，但唯独，少了我特别想喝的那瓶可乐。</p>
+<p>心里自然是不爽的。熬了一个通宵，又饿又累，抽烟太多抽得舌头发苦，那个时候，就真的特别特别想喝一口甜的。（我不知道你们有没有这种经历和体会）</p>
+<p>而送来的外卖，偏偏疏漏，少了我要的那瓶可乐。</p>
+<p>按理说，我想我有充分的投诉和差评的理由吧。</p>
+<p>当时也真的是火大。</p>
+<p>但是看着外卖员气喘吁吁的样子，准确的说，是看他年纪真的不小了。</p>
+<p>讲实话，早上四五点的时候，还在奔波，赚这种纯粹卖力气的钱，真的就是在这个社会的底层了。</p>
+<p>赚的真的是血汗辛苦钱了。</p>
+<p>我当时想，算了，何苦呢，我一个投诉或者差评，会让这个赚血汗钱的大叔，可能今天一晚上都白干了。</p>
+<p>于是我忍下了气，摆了摆手，算了算了。</p>
+<p>收下东西，我回到办公室吃，吃了一半，手机响，是那个外卖员。</p>
+<p>他又跑回了我的公司大门口，我出来开门。</p>
+<p>他递给我一瓶可乐。</p>
+<p>我猜他应该是在半条街外的一家 24 小时便利店买的。</p>
+<p>他给我，说对不起啊，之前是他疏忽，然后说：<strong>你也真的是辛苦，大半夜的还在公司加班啊。</strong></p>
+<p>这个事情微妙在哪里呢？</p>
+<p>我之前放弃投诉，没指责他什么，虽然是善意，但总的来说，还是有一点点居高临下的心态（实话实说），觉得他一个卖力气熬夜干活的底层，实在不容易，不想为难他了。</p>
+<p>然而，他的做法，和他的话，最后提醒了我。</p>
+<p>我同情他是熬夜卖力气干活的苦命人。</p>
+<p>我自己，何尝不是？</p>
+<p>大家，都是在人生的这条道路上，努力的，很努力的，很辛苦的在奔跑。</p>
+<p>众生皆苦。</p>
+</div>
+</div>
+<hr>
+</section><nav id="post-nav"><span class="prev"><a href="/2019/09/20/知乎日报中国的南北差异具体体现在哪些方面？/"><span class="arrow">←</span>Newer Posts</a></span><span class="next"><a href="/2019/09/20/知乎日报我国科学家实现世界首次原子级石墨烯可控折叠，会给业界带来什么改变？/">Older Posts<span class="arrow">→</span></a></span></nav></article></section><footer id="footer"><div id="social"><a class="symbol" href="https://github.com/fuzhouxxdong"><i class="fa fa-github"></i></a></div><p class="small">© Copyright 2018 &nbsp;<i class="fa fa-heart" aria-hidden="true">&nbsp;Dxx</i></p><p class="small">Powered by &nbsp;<a href="https://hexo.io/">Hexo &nbsp;</a>Theme By &nbsp;<a href="https://github.com/fuzhouxxdong/hexo-theme-dxx">Dxx</a></p></footer><script>hljs.initHighlightingOnLoad();</script></body></html>

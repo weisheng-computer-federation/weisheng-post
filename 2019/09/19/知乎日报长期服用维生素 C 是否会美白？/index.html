@@ -1,39 +1,16 @@
-extends includes/layout
-
-block content
-
-    section#wrapper.post
-        article
-            header
-                h1!=page.title
-                h2.headline!=date(page.date, 'MMM DD, YYYY h:mm')
-                    |·
-                    |#{wordcount(page.content)} words
-                    |·
-                    |#{min2read(page.content)} minutes read
-                    span.tags
-
-            if toc(page.content)
-                div#toc!=toc(page.content,{list_number:false})
-
-            section#post-body!=page.content
-
-            - var prev = page.prev ? page.prev.path : false;
-            - var next = page.next ? page.next.path : false;
-            nav#post-nav
-                span.prev
-                    if page.prev
-                        a(href=url_for(prev))
-                            span.arrow ←
-                            | Newer Posts
-                span.next
-                    if page.next
-                        a(href=url_for(next))
-                            | Older Posts
-                            span.arrow →
-
-            include includes/comment.pug
-
-
-
-
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1"><title>知乎日报|长期服用维生素 C 是否会美白？</title><link rel="shortcut icon" href="/images/avatar.png"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.2.0/styles/github.min.css"><script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script></head><body><nav class="main-nav"><a href="/">Home</a><a href="/archives">Archives</a></nav><div class="profile"><section id="wrapper"><header id="header"><a href="/about"><img class="2x" id="avatar" src="/images/avatar.png"></a><h1>微笙文章站</h1><h2></h2></header></section></div><section class="post" id="wrapper"><article><header><h1>知乎日报|长期服用维生素 C 是否会美白？</h1><h2 class="headline">Sep 19, 2019 5:17·800 words
+·3 minutes read<span class="tags"></span></h2></header><div id="toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#长期服用维生素-C-是否会美白？"><span class="toc-text">长期服用维生素 C 是否会美白？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">1 长期服用维生素C是否能美白？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">2 得吃多久才能有效？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">3 吃多少才够</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">4 长期服用维生素C有无副作用？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">5维生素C口服产品推荐</span></a></li></ol></li></ol></div><section id="post-body"><h1 id="长期服用维生素-C-是否会美白？"><a href="#长期服用维生素-C-是否会美白？" class="headerlink" title="长期服用维生素 C 是否会美白？"></a>长期服用维生素 C 是否会美白？</h1><p><img src="https://pic4.zhimg.com/v2-fb1adb9ee8bfe2d0d3cdd80bce79cbaf.jpg" alt></p>
+<blockquote>
+<p>图片：Sponchia / CC0</p>
+</blockquote>
+<div class="answer">
+<div class="meta">
+<img class="avatar" src="http://pic4.zhimg.com/v2-3eab0fe38d443a8a5b10be9471134ba7_is.jpg">
+<span class="author">江小訾，</span><span class="bio">配方师情侣</span>
+</div>
+<div class="content">
+<p>来个简单粗暴的回答吧：</p><h2>1 长期服用维生素C是否能美白？</h2><p><b>能</b>。</p><p>无论是动物实验还是人体实验，无论是单独维生素C或者多种抗氧化剂组合的口服产品，目前结果表明都能让皮肤美白。</p><img data-height="708" data-width="698" src="http://pic2.zhimg.com/70/v2-540328cf9ec98f7716897bc03b85f4d5_b.jpg"><h2>2 得吃多久才能有效？</h2><p>综合目前的几个服用维C人体实验来看，</p><p><b>一个月左右</b>，<b>皮肤的抗氧化能力提高</b>（<b>分子水平上</b>检测到显著变化，比如SOD之类的抗氧化酶活性会升高），<b>但是肉眼看不出有显著变化。</b></p><p><b>肉眼可见的变化，要三个月甚至半年，包括皮肤斑点变小变浅，纹理改善之类的。</b></p><h2><b>3 吃多少才够</b></h2><p>做的几个人体实验维C剂量参差不齐，从50mg/天到2000mg/天的都有。</p><p>维C的剂量吃的少相对应的美白作用也会比较弱，</p><p><b>那吃的越多就美白的越快</b>？</p><p>也不是，因为皮肤的Vc是来自血液的供给。</p><img data-height="367" data-width="509" src="http://pic1.zhimg.com/70/v2-bfe51a0947d258404c30fc8e2019adb4_b.jpg"><p><b>如果血液的Vc量达到饱和，你再怎么吃Vc，皮肤Vc的含量也不会升高</b>。</p><p>因此在这里我建议参考，<b>中国居民膳食指南推荐的维C摄入量——100mg/d（大于14岁）</b>。其实这也是大部分人体实验采用的一个剂量。</p><img data-height="560" data-width="939" src="http://pic3.zhimg.com/70/v2-baebbe5ba0a9aff7c71249a949ce7796_b.jpg"><h2><b>4 长期服用维生素C有无副作用？</b></h2><p><b>从短期来看（一年以内），目前是没发现有什么副作用</b>。但值得注意的是，这个结果是在样本量较少（&lt;500人），且时间较短得出的结论。</p><p><b>从长期（7.5年）和大样本（&gt;1万人）来看</b>，<b>服用维生素C等抗氧化剂（还包括维生素E等）会加大女性得皮肤癌的风险，但对于男性来说，没什么影响。</b></p><img data-height="758" data-width="1509" src="http://pic4.zhimg.com/70/v2-42cf361d14947e62c7af054ed043de5f_b.jpg"><p>但是也不要太害怕，目前这个结论是<b>在较大剂量的抗氧化剂下</b>（120 mg vitaminC, 30 mg vitamin E, 6 mg b-carotene, 100 mg selenium, and 20 mg zinc/天）得出的结果，<b>且是针对欧洲地区的。目前对于亚洲人并没有进一步的实验。</b></p><h2><b>5维生素C口服产品推荐</b></h2><p>本来想推荐几个产品，但是后面发现<b>吃点水果</b>就搞定了，还可以顺带补充点其他维生素，而且还便宜。</p><p>比如<b>新鲜的枣，100g枣/天</b>就够补充维生素C的含量，差不多一天3块钱就搞定了。</p><img data-height="459" data-width="669" src="http://pic1.zhimg.com/70/v2-abaf8a511534f0196ea030c3bee65f90_b.jpg"><p>最后附上<b>参考文献</b>：</p><p>[1]Pullar, J., Carr, A., &amp; Vissers, M. (2017). The roles of vitamin C in skin health.<i>Nutrients</i>,<i>9</i>(8), 866.</p><p>[2]Hercberg, S., Ezzedine, K., Guinot, C., Preziosi, P., Galan, P., Bertrais, S., ... &amp; Malvy, D. (2007). Antioxidant supplementation increases the risk of skin cancers in women but not in men.<i>The Journal of nutrition</i>,<i>137</i>(9), 2098-2105.</p><p>[3]Pérez-Sánchez, A., Barrajón-Catalán, E., Herranz-López, M., &amp; Micol, V. (2018). Nutraceuticals for skin care: A comprehensive review of human clinical studies.<i>Nutrients</i>,<i>10</i>(4), 403.</p><p>[4]McArdle, F., Rhodes, L. E., Parslew, R., Jack, C. I. A., Friedmann, P. S., &amp; Jackson, M. J. (2002). UVR-induced oxidative stress in human skin in vivo: effects of oral vitamin C supplementation.<i>Free Radical Biology and Medicine</i>,<i>33</i>(10), 1355-1362.</p><p></p>
+</div>
+</div>
+<hr>
+</section><nav id="post-nav"><span class="prev"><a href="/2019/09/19/知乎日报地铁行业里，如何做一名合格的产品经理/"><span class="arrow">←</span>Newer Posts</a></span><span class="next"><a href="/2019/09/19/知乎日报如何理解「当科学家们爬上一个又一个的山顶时，总发现佛学大师们早已在那里等着了」？/">Older Posts<span class="arrow">→</span></a></span></nav></article></section><footer id="footer"><div id="social"><a class="symbol" href="https://github.com/fuzhouxxdong"><i class="fa fa-github"></i></a></div><p class="small">© Copyright 2018 &nbsp;<i class="fa fa-heart" aria-hidden="true">&nbsp;Dxx</i></p><p class="small">Powered by &nbsp;<a href="https://hexo.io/">Hexo &nbsp;</a>Theme By &nbsp;<a href="https://github.com/fuzhouxxdong/hexo-theme-dxx">Dxx</a></p></footer><script>hljs.initHighlightingOnLoad();</script></body></html>

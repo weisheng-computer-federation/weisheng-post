@@ -1,39 +1,59 @@
-extends includes/layout
-
-block content
-
-    section#wrapper.post
-        article
-            header
-                h1!=page.title
-                h2.headline!=date(page.date, 'MMM DD, YYYY h:mm')
-                    |·
-                    |#{wordcount(page.content)} words
-                    |·
-                    |#{min2read(page.content)} minutes read
-                    span.tags
-
-            if toc(page.content)
-                div#toc!=toc(page.content,{list_number:false})
-
-            section#post-body!=page.content
-
-            - var prev = page.prev ? page.prev.path : false;
-            - var next = page.next ? page.next.path : false;
-            nav#post-nav
-                span.prev
-                    if page.prev
-                        a(href=url_for(prev))
-                            span.arrow ←
-                            | Newer Posts
-                span.next
-                    if page.next
-                        a(href=url_for(next))
-                            | Older Posts
-                            span.arrow →
-
-            include includes/comment.pug
-
-
-
-
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1"><title>知乎日报|研究首次发现人类可以「返老还童」，长生不老离我们还有多远？</title><link rel="shortcut icon" href="/images/avatar.png"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.2.0/styles/github.min.css"><script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script></head><body><nav class="main-nav"><a href="/">Home</a><a href="/archives">Archives</a></nav><div class="profile"><section id="wrapper"><header id="header"><a href="/about"><img class="2x" id="avatar" src="/images/avatar.png"></a><h1>微笙文章站</h1><h2></h2></header></section></div><section class="post" id="wrapper"><article><header><h1>知乎日报|研究首次发现人类可以「返老还童」，长生不老离我们还有多远？</h1><h2 class="headline">Sep 20, 2019 12:50·3.5k words
+·12 minutes read<span class="tags"></span></h2></header><div id="toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#研究首次发现人类可以「返老还童」，长生不老离我们还有多远？"><span class="toc-text">研究首次发现人类可以「返老还童」，长生不老离我们还有多远？</span></a></li></ol></div><section id="post-body"><h1 id="研究首次发现人类可以「返老还童」，长生不老离我们还有多远？"><a href="#研究首次发现人类可以「返老还童」，长生不老离我们还有多远？" class="headerlink" title="研究首次发现人类可以「返老还童」，长生不老离我们还有多远？"></a>研究首次发现人类可以「返老还童」，长生不老离我们还有多远？</h1><p><img src="https://pic2.zhimg.com/v2-db0eb675bc82a52e87bcb86b1027cd55.jpg" alt></p>
+<blockquote>
+<p>图片：《年轻气盛》</p>
+</blockquote>
+<div class="answer">
+<div class="meta">
+<img class="avatar" src="http://pic4.zhimg.com/v2-1b6ca8612ed23570d29366b719543f13_is.jpg">
+<span class="author">爱范儿，</span><span class="bio">数字公民的糖</span>
+</div>
+<div class="content">
+<p>在笔者毕业的大学里，有一门十分受欢迎的选修课，叫做「<a class="wrap external" href="https://link.zhihu.com/?target=http%3A//www.icourse163.org/course/GZU-1003480003" rel="nofollow noreferrer" target="_blank">生死学</a>」。这堂课教的是如何理解和面对死亡，而作业包括给自己写遗嘱、墓志铭等。</p>
+<p>人生充满了各种不确定性，但唯一的确定就是会死。如果有一天人类不必再面对死亡，那么我们又应该怎样看待生命的意义呢？</p>
+<figure><img alt class="content-image" src="https://pic3.zhimg.com/v2-116a8350ec96d252aadc3bce6db47c8e_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>▲ 图片来自：《入殓师》<br><br>传说几千年前，秦始皇为了派了上千名童男童女前往渤海湾，找寻不老神药。可「长生不老」往往只被当作一个荒诞不经的笑话，或者是不靠谱的骗局。<br><br>然而人类从没放弃过追求长生不老，众多科学研究已经证明长生不老并不违背物理规律。最近《自然》杂志一项研究还首次发现人的生物年龄可以逆转，这是否意味我们真的可以返老还童了？</p>
+<p><strong>《自然》杂志：研究首次发现生物年龄可以逆转</strong></p>
+<p>据 <a class="wrap external" href="https://link.zhihu.com/?target=https%3A//www.nature.com/articles/d41586-019-02638-w%23ref-CR1" rel="nofollow noreferrer" target="_blank">《自然》杂志报道</a>，在美国加利福尼亚州进行的一项小型临床研究首次表明，用于显示人体生物年龄的表观遗传时钟（epigenetic clock）是可以被逆转的。</p>
+<figure><img alt class="content-image" src="https://pic1.zhimg.com/v2-a81cdea37bc09751a45a234fd9ea5e30_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>在为期一年的时间里，9 名志愿者服用了 3 种常用药物——生长激素和两种糖尿病药物。一年后对这 9 名志愿者的基因组标记进行分析后发现，他们的平均生物年龄减少了 2.5 岁，同时免疫系统也出现了恢复活力的迹象。<br><br>从生物学意义来讲，这 9 名 51-65 岁的白人男性年轻了 2.5 岁。<br><br>这个结果大大出乎了研究者的意料，加州大学洛杉矶分校的遗传学家 Steve Horvath 表示，原本只是设想表观遗传时钟的速度会放缓，从没想过会发生逆转，目前这个研究的结果已经发表在权威期刊 <a class="wrap external" href="https://link.zhihu.com/?target=https%3A//onlinelibrary.wiley.com/doi/full/10.1111/acel.13028" rel="nofollow noreferrer" target="_blank">Aging Cell</a> 上。</p>
+<figure><img alt class="content-image" src="https://pic3.zhimg.com/v2-7e25745f22a9adabef2b6dad3fab55d6_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>事实上，这一开始就不是为了实现「返老还童」而进行的研究。试验的主要目的是为了测试生长激素是否可以安全地用于人类以恢复胸腺中的组织。<br><br>胸腺位于肺部和胸骨之间，对于免疫功能至关重要。白细胞在骨髓中产生，随后在胸腺中成熟，形成特殊的 T 细胞，帮助身体对抗感染和癌症。不过到了青春期后腺体就开始萎缩，逐渐被脂肪堵塞。</p>
+<figure><img alt class="content-image" src="https://pic1.zhimg.com/v2-646f7ba33a7bd3882725a63c5673814c_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>▲ 图片来自：《抗癌的我》<br><br>而来自动物和人体的一些研究实验表明，生长激素可以刺激胸腺再生，但副作用是会引发糖尿病，因此试验同时采用了脱氢表雄酮（DHEA）和二甲双胍这两种常见的抗糖尿病药物。<br><br>巧合的是，这两种抗糖尿病药物也被一些研究发现有可能对人体抗衰老起到一定作用。</p>
+<figure><img alt class="content-image" src="https://pic1.zhimg.com/v2-ef6dba72a9e4b7cfba28cfb7362a10ac_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>胸腺再生如果真的能提高人的免疫系统能力，对预防癌症和心脏病等与年龄相关的疾病将有重要意义，即便不能实现返老还童，也能延长很多人的生命，或者让人更健康地老去。<br><br>值得一提的是负责这次试验的免疫学家 Gregory Fahy，早在 1996 年 46 岁的 Fahy 就给自己注射了一个月的生长激素和 DHEA，并发现自己的胸腺出现了再生。</p>
+<figure><img alt class="content-image" src="https://pic1.zhimg.com/v2-cde28b55e09e81bd69e22be80a5eefc0_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>▲ Gregory Fahy.<br><br>之所以要拿自己做试验，主要是因为这类人体试验需要获得美国食品和药物管理局的批准，要通过审核并不容易，这次的临床试验也在 2015 年才获批。<br><br>这样「神农尝百草式」的自我试验十分危险，但也可能「中头奖」。一位给自己进行基因治疗的微生物学家 Brian Hanley 查阅了关于的自我实验的<a class="wrap external" href="https://link.zhihu.com/?target=https%3A//www.newyorker.com/magazine/2017/04/03/silicon-valleys-quest-to-live-forever" rel="nofollow noreferrer" target="_blank">文献</a>，发现有 8 人死亡，10 人获得了诺贝尔奖。</p>
+<figure><img alt class="content-image" src="https://pic1.zhimg.com/v2-3ecb779529628e47172925bdc1ef1da0_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>虽然 Gregory Fahy 这次的临床测试结果令人惊喜，但研究人员也强调这次试验的规模很小，而且没有设立对照组，换言之「逆转生物年龄」这样的结果并不完全可靠，还需要更进一步的研究来证明。<br><br>尽管「返老还童」还不现实，可过去这些年也涌现了很多「延长寿命」研究和技术，这也让长生不老看起来真的有可能实现。</p>
+<p><strong>科学家已经能让动物的寿命大大延长，那么人类呢？</strong></p>
+<p>在很多研究者来看来，死亡其实也是一种疾病，因此生物学上的衰老是完全有可能避免和可治疗的，现在已经有越来越多的研究结果支撑这个观点。</p>
+<p>2012 年日本京都大学的山中伸弥教授凭借 <a class="wrap external" href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%25E8%25AF%25B1%25E5%25AF%25BC%25E6%2580%25A7%25E5%25A4%259A%25E8%2583%25BD%25E5%25B9%25B2%25E7%25BB%2586%25E8%2583%259E" rel="nofollow noreferrer" target="_blank">iPs 细胞（induced pluripotent stem cells）</a>获得了诺贝尔医学生理学奖，这种细胞能够分化成人体内任何一种细胞，这意味着人类有可能通过 iPs 细胞制造出自己的器官。</p>
+<figure><img alt class="content-image" src="https://pic3.zhimg.com/v2-585410a72c4fdab58d4a8c507d090b22_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>iPs 细胞是通过被命名为「山中因子」（Yamanaka factor）的 4 个转录因子引入老鼠细胞中诱导得出的，也就是说将成熟细胞逆转回到了胚胎干细胞的阶段，实现了细胞的「返老还童」。<br><br>如果应用到临床上，不仅急需器官移植的绝症患者不再需要大海捞针般寻找配型器官，当人的组织和器官生病或者衰老后就可以通过 iPs 细胞再造一个新的更换，人类可以不断更换老化的零部件，从而永远地活下去，这也是所谓的「再生医学」（Regenerative medicine）。</p>
+<figure><img alt class="content-image" src="https://pic1.zhimg.com/v2-225b05e132184893270a04915ea7f618_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>当然 iPs 细胞目前还没应用到人体，但 2016 年美国加州的 Salk 研究所通过「<a class="wrap external" href="https://link.zhihu.com/?target=http%3A//www.cell.com/cell/fulltext/S0092-8674%2816%2931664-6" rel="nofollow noreferrer" target="_blank">细胞重编程</a>」在老鼠中激活了「山中基因」，使患有早衰疾病的小白鼠「返老还童」，衰老特征消失，寿命延长了 30%。</p>
+<figure><img alt class="content-image" src="https://pic2.zhimg.com/v2-7029e8e74ba26fa70e8e54eb50f0bd61_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>Salk 研究所负责这次研究的 Juan Carlos Izpisua Belmonte 教授<a class="wrap external" href="https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/6ecJQyy0aN5BA7rY578BRw%3F" rel="nofollow noreferrer" target="_blank">认为</a>这项技术有望用于人类：</p>
+<blockquote>人体有极强的可塑性，通过不断的调整，衰老可能被逆转。</blockquote>
+<p>其实很多动物实验中，科学家早就实现了「返老还童」和寿命的延长。</p>
+<p>2014 年哈佛大学干细胞与再生生物学的学者艾米·韦杰斯在实验中发现，幼鼠体内的一种名为 GDF11 的生长因子蛋白质，能让年老小鼠的大脑变年轻，这种蛋白质多存在于年轻的躯体血液中。</p>
+<figure><img alt class="content-image" src="https://pic4.zhimg.com/v2-00a079c45a5362685b2ff904afaabc4b_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>▲图片来自：<a class="wrap external" href="https://link.zhihu.com/?target=http%3A//www.sciencemag.org/news/2015/10/antiaging-protein-real-deal-harvard-team-claims" rel="nofollow noreferrer" target="_blank">Science</a><br><br>早在上世纪 90 年代，Google 资助抗衰老研究公司 Calico Labs 就通过基因编辑让线虫的寿命从三周提升到六周，后来研究人员已经将线虫寿命延长 10 倍，小鼠寿命延长 2 倍。<br><br>但目前为止这些结果都还没有在人类身上得到体现，顶尖的线虫研究者 Gordon Lithgow 博士<a class="wrap external" href="https://link.zhihu.com/?target=https%3A//www.newyorker.com/magazine/2017/04/03/silicon-valleys-quest-to-live-forever" rel="nofollow noreferrer" target="_blank">指出</a>，仅在线虫体内就有 550 个基因与寿命有关，而线虫只有 959 个细胞，而人体细胞则有 40 万亿—60 万亿个。</p>
+<figure><img alt class="content-image" src="https://pic1.zhimg.com/v2-c07e944353b61237d09d719a0da99a64_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>▲寿命最长的是弓头鲸，最多能活到 211 岁 图片来自：<a class="wrap external" href="https://link.zhihu.com/?target=https%3A//www.pinterest.com/pin/453034043748407973/%3Flp%3Dtrue" rel="nofollow noreferrer" target="_blank">pinterest</a><br><br>因此要确定人体那些和长寿相关的基因是非常困难的，而且想要把弓头鲸、海龟等动物的长寿基因用到人体上也不容易，哈佛大学遗传学教授 George Church 表示：</p>
+<blockquote>你不能只从乌龟中复制单独一个长寿基因，我们必须把人类基因组转变成乌龟的基因组，然后我们就成乌龟了。</blockquote>
+<p>但这不能阻挡人们对于「长生不老」的追求，在硅谷还掀起了一股创业热潮。</p>
+<p><strong>硅谷的「长生不老」梦</strong></p>
+<p>2015 年 2 月 <a class="wrap external" href="https://link.zhihu.com/?target=https%3A//time.com/3706775/in-the-latest-issue-23/" rel="nofollow noreferrer" target="_blank">《时代》杂志的封面</a>，就和长寿有关，封面文章认为人类能够活到 142 岁，死亡不再是超自然的问题，而是一个技术问题。</p>
+<figure><img alt class="content-image" src="https://pic3.zhimg.com/v2-66aebd31a23e5f5b35e85cd251005636_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>这背后也是巨大的商业价值，《麻省理工科技评论》也在一篇文章中说过这样的一句话：</p>
+<blockquote>假如一个企业能将人们的寿命延长两年，那这个企业的价值就会超过一千亿。</blockquote>
+<p>一大批研发永生技术的公司在硅谷出现，科技公司的亿万富翁成为了这些创业公司的投资者，比如表示想活到 120 岁的 PayPal 联合创始人 Peter Thiel。</p>
+<p>根据纪录片《<a class="wrap external" href="https://link.zhihu.com/?target=https%3A//v.qq.com/x/page/a0887dykpd3.html%3Fstart%3D2979" rel="nofollow noreferrer" target="_blank">明天之前</a>》里提到的一项统计数据，2007 年以来，直接投资于延长人类寿命相关研究的资金，已经超过 40 亿美元。</p>
+<p>在这个领域里，<a class="wrap external" href="https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Longevity_escape_velocity" rel="nofollow noreferrer" target="_blank">长寿逃脱速度（actuarial escape velocity）</a>是一个时常被提及的一个概念，指的是时间每推移一年，长寿研究取得的进展就使得人类平均预期寿命提高超过一年。理论上，这种趋势将让我们最终超越死亡。</p>
+<figure><img alt class="content-image" src="https://pic3.zhimg.com/v2-4287e6d19d1cfb1f825900c23814419a_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>尽管目标都是长生不老，但长生论者却分为了两个阵营。一种是追求肉体的永生，即通过生物科学技术更换生物元件，使人体脱离原有的衰老机制，让人类将成为一种永生的「肉食傀儡」（Meat Puppets）。<br><br>另一种则是数字化的永生，这一派相信人类可以和机器人或者云结合，看过《黑镜》第三季《圣朱尼佩洛》的读者应该不陌生。</p>
+<figure><img alt class="content-image" src="https://pic2.zhimg.com/v2-f21b8016ce04aec26037229b3ca48b31_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>▲ 图片来自：《机械姬》<br><br>这两种截然不同的方向，也诞生了不同的创业公司。<br><br>比如美国加州蒙特利提供「换血服务」的公司 <a class="wrap external" href="https://link.zhihu.com/?target=https%3A//www.ambrosiaplasma.com/" rel="nofollow noreferrer" target="_blank">Ambrosia</a>，这家公司声称通过输入年轻人的血液，能减缓衰老以及随之带来的一系列问题。</p>
+<figure><img alt class="content-image" src="https://pic1.zhimg.com/v2-f5dba573d7921e053ab750f8c162d0fc_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>▲ 图片来自：<a class="wrap external" href="https://link.zhihu.com/?target=https%3A//www.newsweek.com/2017/07/21/ambrosia-jesse-karmazin-startup-will-give-you-young-blood-reverse-aging-it-623215.html" rel="nofollow noreferrer" target="_blank">newsweek</a><br><br>有部分研究显示这种吸血鬼般的「换血」的确在老鼠中取得了显著效果，但也有研究指出「年轻血液」并不能成为逆转衰老的「有效药物」。来自斯坦福大学的神经学家 Tony Wyss-Coray 也对 Ambrosia 的换血服务<a class="wrap external" href="https://link.zhihu.com/?target=https%3A//www.ifanr.com/897007" rel="nofollow noreferrer" target="_blank">提出质疑</a>：</p>
+<blockquote>目前没有任何临床证据（可证明这个治疗有效），你们（Ambrosia）就是在滥用人们的信任以及公众的关注。</blockquote>
+<p>至于数字化的永生，代表便是埃隆·马斯克的神秘公司 <a class="wrap external" href="https://link.zhihu.com/?target=https%3A//www.ifanr.com/1237502" rel="nofollow noreferrer" target="_blank">Neuralink</a> ，通过脑机接口将人脑和电脑结合，长远目标则是实现人和人工智能的融合。</p>
+<figure><img alt class="content-image" src="https://pic1.zhimg.com/v2-2066e9e610463bdcf565c0eca89ec624_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>Google 工程总监 Ray Kurzweil 认为身体本质上是一台的计算机，可以通过重写数据和更新程序来延缓衰老，他认为 2030 年前血红细胞大小的纳米机器人就会遍布在体内，治愈各种疾病，让人类摆脱长寿逃逸速度，<br><br>到了 2045 年。我们的大脑会连接到云端，人的智力迅速提升十亿倍，非生物智力成为主导，肉体已经没有必要存在。<br><br>2013 年 6 月 18 日，Ray Kurzweil 就曾在「2045 未来世界大会上」<a class="wrap external" href="https://link.zhihu.com/?target=http%3A//digitalpaper.stdaily.com/http_www.kjrb.com/kjrb/html/2015-03/29/content_298142.htm%3Fdiv%3D0" rel="nofollow noreferrer" target="_blank">预言</a>：</p>
+<blockquote>虽然人类尚未实现永生，但科技的快速发展使这一梦想与现实的距离越来越近。</blockquote>
+<p><strong>人类应该追求永生吗？</strong></p>
+<p>科学正在将「长生不老」变成一个技术问题，但是否应该追求永生则可能是一个伦理和社会问题。</p>
+<figure><img alt class="content-image" src="https://pic4.zhimg.com/v2-6b5f79c0d7e9b2fb3ff6437f45d69cb3_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>▲ 图片来自：<a class="wrap external" href="https://link.zhihu.com/?target=https%3A//www.qt.com.au/news/scientific-breakthrough-could-reverse-aging-proces/3162448/" rel="nofollow noreferrer" target="_blank">Queensland Times</a><br><br>随着这类研究不断取得进展，人们对于这些技术提出了不少担忧。比如一旦人类寿命大幅延长后导致人口过度增长，地球是否能支撑庞大的人口，粮食等资源是否会出现短缺等。<br><br>以及如果这项技术可能只有部分人能享受到，死亡面前不再人人平等，可能会发展出比贫富差距更严重的社会鸿沟。</p>
+<figure><img alt class="content-image" src="https://pic1.zhimg.com/v2-4576990c6975fb87145fb171e5e2f110_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>▲ 图片来自：<a class="wrap external" href="https://link.zhihu.com/?target=https%3A//www.earth.com/news/overpopulation-overconsumption/" rel="nofollow noreferrer" target="_blank">Earth.com</a><br><br>著名未来学家 Thomas Frey 曾<a class="wrap external" href="https://link.zhihu.com/?target=http%3A//www.sohu.com/a/225915973_99950936" rel="nofollow noreferrer" target="_blank">撰文分析</a>寿命大幅延长对整个社会、经济体系带来的利弊。<br><br>其中积极的因素包括：改善健康、延迟死亡、智力显著提高、发现新时代、新的社会结构、更稳定的社会、更加成熟、更多元化的经济。<br><br>而不利的因素也不少：旧系统的崩溃、混乱的转变、阶层的进一步固化、超级老人控制财富、根深蒂固的政治制度、紧迫性的丧失、创新的丧失、严格的人口控制。<br><br>正如历史上的每个时代，长生不老带来的的好和坏都会十分突出。在纪录片《明日之前》里，一位科学家对于永生技术可能带来的公平分配问题，表示「不能因为不是所有人都能享受医保就否定医保」。</p>
+<figure><img alt class="content-image" src="https://pic3.zhimg.com/v2-0494a7a7b973f7e0f1e52b43b92a8eda_b.jpg"></figure><p class="ztext-empty-paragraph"> <br><br>▲ 图片来自：BBC<br><br>BBC <a class="wrap external" href="https://link.zhihu.com/?target=http%3A//www.bbc.com/future/story/20180203-the-ambitious-quest-to-cure-ageing-like-a-disease" rel="nofollow noreferrer" target="_blank">一篇文章</a>则认为资源紧张等问题未来同样可能随着新的技术而解决，如果当年疫苗和抗生素的研究先驱也被这样的观念束缚，那么现在很多人可能都活不过 40 岁。<br><br>虽然目前长生不老距离我们似乎还很遥远，但科技的发展已经让它不再是天方夜谭，我们正走在这条路上。<br><br>如果给你一个选择的机会，你会选择长生不老还是自然死去？<br><br>题图来自：《年轻气盛》</p>
+<div class="view-more"><a href="http://zhuanlan.zhihu.com/p/82517662" target="_self">查看知乎原文</a></div>
+</div>
+</div>
+<hr>
+</section><nav id="post-nav"><span class="prev"><a href="/2019/09/20/知乎日报为什么几乎所有的动物都是肚子上的毛色浅于背上的？/"><span class="arrow">←</span>Newer Posts</a></span><span class="next"><a href="/2019/09/20/知乎日报离开表情包，我就不会聊天了/">Older Posts<span class="arrow">→</span></a></span></nav></article></section><footer id="footer"><div id="social"><a class="symbol" href="https://github.com/fuzhouxxdong"><i class="fa fa-github"></i></a></div><p class="small">© Copyright 2018 &nbsp;<i class="fa fa-heart" aria-hidden="true">&nbsp;Dxx</i></p><p class="small">Powered by &nbsp;<a href="https://hexo.io/">Hexo &nbsp;</a>Theme By &nbsp;<a href="https://github.com/fuzhouxxdong/hexo-theme-dxx">Dxx</a></p></footer><script>hljs.initHighlightingOnLoad();</script></body></html>

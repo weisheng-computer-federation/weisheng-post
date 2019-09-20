@@ -1,39 +1,16 @@
-extends includes/layout
-
-block content
-
-    section#wrapper.post
-        article
-            header
-                h1!=page.title
-                h2.headline!=date(page.date, 'MMM DD, YYYY h:mm')
-                    |·
-                    |#{wordcount(page.content)} words
-                    |·
-                    |#{min2read(page.content)} minutes read
-                    span.tags
-
-            if toc(page.content)
-                div#toc!=toc(page.content,{list_number:false})
-
-            section#post-body!=page.content
-
-            - var prev = page.prev ? page.prev.path : false;
-            - var next = page.next ? page.next.path : false;
-            nav#post-nav
-                span.prev
-                    if page.prev
-                        a(href=url_for(prev))
-                            span.arrow ←
-                            | Newer Posts
-                span.next
-                    if page.next
-                        a(href=url_for(next))
-                            | Older Posts
-                            span.arrow →
-
-            include includes/comment.pug
-
-
-
-
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1"><title>知乎日报|喝牛奶会使皮肤变白吗？</title><link rel="shortcut icon" href="/images/avatar.png"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.2.0/styles/github.min.css"><script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script></head><body><nav class="main-nav"><a href="/">Home</a><a href="/archives">Archives</a></nav><div class="profile"><section id="wrapper"><header id="header"><a href="/about"><img class="2x" id="avatar" src="/images/avatar.png"></a><h1>微笙文章站</h1><h2></h2></header></section></div><section class="post" id="wrapper"><article><header><h1>知乎日报|喝牛奶会使皮肤变白吗？</h1><h2 class="headline">Sep 20, 2019 12:50·744 words
+·2 minutes read<span class="tags"></span></h2></header><div id="toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#喝牛奶会使皮肤变白吗？"><span class="toc-text">喝牛奶会使皮肤变白吗？</span></a></li></ol></div><section id="post-body"><h1 id="喝牛奶会使皮肤变白吗？"><a href="#喝牛奶会使皮肤变白吗？" class="headerlink" title="喝牛奶会使皮肤变白吗？"></a>喝牛奶会使皮肤变白吗？</h1><p><img src="https://pic2.zhimg.com/v2-cdd6b075183532fc1c1de26353aef445.jpg" alt></p>
+<blockquote>
+<p>图片：Myriams-Fotos / CC0</p>
+</blockquote>
+<div class="answer">
+<div class="meta">
+<img class="avatar" src="http://pic2.zhimg.com/v2-19198083170699e72c31eef657527891_is.jpg">
+<span class="author">卷福酱，</span><span class="bio">阿福在知乎</span>
+</div>
+<div class="content">
+<p><b>吃酱油会不会变黑，喝牛奶会不会变白，吃玉米会不会变黄...下一个问题应该是，吃紫薯会不会便灭霸？</b></p><img data-height="800" data-width="1200" src="http://pic1.zhimg.com/70/v2-af3293686a42f2b38a787cead7884b9c_b.jpg"><p>人的皮肤不是调色板，吃点什么就变色。</p><p>肤色是由各种人体色素形成的，这其中最主要的是黑色素（包括真黑素和褐黑素），其次是血红素，以及胡萝卜素。</p><img data-height="130" data-width="432" src="http://pic3.zhimg.com/70/v2-18b05b52c116034f7cef95ac9e58bcd2_b.jpg"><img data-height="646" data-width="1280" src="http://pic2.zhimg.com/70/v2-169d7fc96766384bf457b957c497f0f1_b.jpg"><img data-height="223" data-width="900" src="http://pic1.zhimg.com/70/v2-91c97d8fc7e15a1e2d3c46c77f706d88_b.jpg"><p>不同种族之间的肤色差距主要是黑素小体代谢的速率造成的，白种高加索人皮肤里的黑素小体到不了角质层就被代谢掉了，所以肤色浅；非洲黑种人的黑素小体极为顽强，在角质层的代谢缓慢，数量多，颗粒大，随意肤色深；我们亚洲人则适中，所以皮肤可黑可白。</p><p>再来看看牛奶，牛奶显现的白色是典型的乳白色（不是废话），也就是来自乳化的白，是由至少两种互不相容的液体混合后造成的白色不透光乳浊液。不透光呈白色是因为水里漂浮了大量的乳脂类和乳蛋白，所以将牛奶破乳后可以得到黄油。这样看来，喝牛奶是应该变黄才对咯？</p><img data-height="744" data-width="1024" src="http://pic4.zhimg.com/70/v2-f548b299750261e8b676995f888d88cb_b.jpg"><p>牛奶是很有营养的食物，也是各种乳制品的来源，但其中的主要成分，无论是乳脂，乳蛋白还是乳糖，都没有显著的美白功效，只有其中微量的维生素可能会发挥一点点美白的功效，要喝多少才能明显看到效果就没办法计算了。发酵过后产生的乳酸倒是有那么一点剥脱美白的功效，但效果也是微乎其微。整天喝牛奶吃乳制品倒是会提高长痘的风险，因为摄入的脂类太多。</p><p><b>能够给皮肤提供一定程度光保护（防晒黑，晒伤，光老化）的食物也是存在的。</b></p><p>例如富含类胡萝卜素的番茄，萝卜，菠菜，紫薯，以及三文鱼，金枪鱼，沙丁鱼，虹鳟等鱼肉里的Omega-3脂肪酸，都对皮肤有一定的光保护效果。</p><p>一种蕨类植物，Polypodium leucotomos（白绒水龙骨），其功效包括预防因紫外线照射皮肤所引起的癌症和皮肤老化，包括DNA损坏、发炎、免疫系统抑制，关于它的研究有许多的临床报告，一种名为Fernblock®的口服药物已经上市。对于亚洲人中常见的黄褐斑也有疗效。</p><img data-height="212" data-width="283" src="http://pic3.zhimg.com/70/v2-bcf9633cdb7249d8228f598f3a884c76_b.jpg"><p>最后总结：</p><p><b>吃酱油不会变黑，喝牛奶不会变白，吃玉米也不会变黄...多吃紫薯倒是有可能变白一丢丢，不会变灭霸。</b></p><p>PS：说喝白开水可以隐身的那位答主，请收下我的膝盖 </p>
+</div>
+</div>
+<hr>
+</section><nav id="post-nav"><span class="prev"><a href="/2019/09/20/知乎日报《名侦探柯南》按主线时间线来算，现在距离新一变成柯南过了多久？/"><span class="arrow">←</span>Newer Posts</a></span><span class="next"><a href="/2019/09/20/知乎日报VIE 结构是什么？建立的过程中需要注意什么问题？/">Older Posts<span class="arrow">→</span></a></span></nav></article></section><footer id="footer"><div id="social"><a class="symbol" href="https://github.com/fuzhouxxdong"><i class="fa fa-github"></i></a></div><p class="small">© Copyright 2018 &nbsp;<i class="fa fa-heart" aria-hidden="true">&nbsp;Dxx</i></p><p class="small">Powered by &nbsp;<a href="https://hexo.io/">Hexo &nbsp;</a>Theme By &nbsp;<a href="https://github.com/fuzhouxxdong/hexo-theme-dxx">Dxx</a></p></footer><script>hljs.initHighlightingOnLoad();</script></body></html>

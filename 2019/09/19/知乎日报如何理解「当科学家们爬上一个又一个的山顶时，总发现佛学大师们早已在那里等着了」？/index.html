@@ -1,39 +1,29 @@
-extends includes/layout
-
-block content
-
-    section#wrapper.post
-        article
-            header
-                h1!=page.title
-                h2.headline!=date(page.date, 'MMM DD, YYYY h:mm')
-                    |·
-                    |#{wordcount(page.content)} words
-                    |·
-                    |#{min2read(page.content)} minutes read
-                    span.tags
-
-            if toc(page.content)
-                div#toc!=toc(page.content,{list_number:false})
-
-            section#post-body!=page.content
-
-            - var prev = page.prev ? page.prev.path : false;
-            - var next = page.next ? page.next.path : false;
-            nav#post-nav
-                span.prev
-                    if page.prev
-                        a(href=url_for(prev))
-                            span.arrow ←
-                            | Newer Posts
-                span.next
-                    if page.next
-                        a(href=url_for(next))
-                            | Older Posts
-                            span.arrow →
-
-            include includes/comment.pug
-
-
-
-
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1"><title>知乎日报|如何理解「当科学家们爬上一个又一个的山顶时，总发现佛学大师们早已在那里等着了」？</title><link rel="shortcut icon" href="/images/avatar.png"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.2.0/styles/github.min.css"><script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script></head><body><nav class="main-nav"><a href="/">Home</a><a href="/archives">Archives</a></nav><div class="profile"><section id="wrapper"><header id="header"><a href="/about"><img class="2x" id="avatar" src="/images/avatar.png"></a><h1>微笙文章站</h1><h2></h2></header></section></div><section class="post" id="wrapper"><article><header><h1>知乎日报|如何理解「当科学家们爬上一个又一个的山顶时，总发现佛学大师们早已在那里等着了」？</h1><h2 class="headline">Sep 19, 2019 5:17·3k words
+·10 minutes read<span class="tags"></span></h2></header><div id="toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#如何理解「当科学家们爬上一个又一个的山顶时，总发现佛学大师们早已在那里等着了」？"><span class="toc-text">如何理解「当科学家们爬上一个又一个的山顶时，总发现佛学大师们早已在那里等着了」？</span></a></li></ol></div><section id="post-body"><h1 id="如何理解「当科学家们爬上一个又一个的山顶时，总发现佛学大师们早已在那里等着了」？"><a href="#如何理解「当科学家们爬上一个又一个的山顶时，总发现佛学大师们早已在那里等着了」？" class="headerlink" title="如何理解「当科学家们爬上一个又一个的山顶时，总发现佛学大师们早已在那里等着了」？"></a>如何理解「当科学家们爬上一个又一个的山顶时，总发现佛学大师们早已在那里等着了」？</h1><p><img src="https://pic4.zhimg.com/v2-86b9d92197fdc3ff1b17e2dc70720463.jpg" alt></p>
+<blockquote>
+<p>图片：qimono / CC0</p>
+</blockquote>
+<div class="answer">
+<div class="meta">
+<img class="avatar" src="http://pic1.zhimg.com/da8e974dc_is.jpg">
+<span class="author">知乎用户，</span><span class="bio">天将降陨石于斯人</span>
+</div>
+<div class="content">
+<p>诸如“佛教不是宗教是哲学”，“当科学家们爬上一个又一个的山顶时，总发现佛学大师们早已在那里等着了”这样的论调，目前听到得越来越多，好像很时髦很新鲜。其实如果读史便会发现，这样的论调早在一百多年前就已经出现了，而且提的人，竟然都是当时最有影响力最深刻的一些思想家。其论调的夸张程度和影响力，实在都不是现在能同日而语的。我们实在应该跟随葛兆光等治思想史大家的路子，仔细考察一些这些说法的渊薮，看看这些说法曾经在中国掀起的波澜，并不要遗忘那段风云际会的思想碰撞。</p>
+<p>一切的开始还得从日本说起。19 世纪中后期明治时代的日本佛教，正处于基督教、儒学、神道教和西方思潮的围剿中，处境艰难。明治元年（1868）三月颁布的”祭政一致”布告，将佛教革出国家神权之外，而改由神道教充当国教；半个月后又颁布”神佛判然”令，宣布废除对佛教菩萨神灵的崇拜，将原来两部神社内的佛像移除。明治三年（1870）年五月，天皇将宫中的佛像佛具移出，放到了泉涌寺去。</p>
+<p>在这种岌岌可危的形势下，日本佛教自然不能坐以待毙，而是开始积极主动行动起来，自振自救，以求得生存的空间。怎么做呢？正面硬抗西方科学和哲学显然是行不通的。而且宗教的最大敌人还是宗教本身，日本佛教当时面临的最大对手，还是随西方思潮一同传进来的基督教。所以他们采用了曲线救教的路线，放下身段，积极学习和了解西洋科学和哲学知识，并转化到自己的体系中，最终成为对抗基督教的工具。</p>
+<p>这一振兴思潮的主要代表人物，即东本愿寺一系的井上圆了。他的著名口号是”护国爱理”，希望借佛教弘扬国家至上主义，借以重新夺回佛教在国家政治上的话语权。他在批判基督教时，就将佛教跟科学相连，以”日心说”、进化论之道德观批判基督教的宇宙论、上帝造物论，证明东方的佛教跟科学并不矛盾，而基督教倒是反科学的。同时东本愿寺还向海外派出了大量留学僧（<strong>这是货真价实的留学僧~</strong>）去学习西洋思想，以补充佛教的理论。这些人回国后的确都成了佛教新思想和新方法的开创者。</p>
+<p>日本明治九年（1876）年，日本净土真宗僧人小栗栖香顶向东本愿寺提出到中国开教的申请，到上海创建了中国内地第一所日本寺庙的别院。一千多年来总是从”唐土“学习佛教新经验的日本，凭借国力的增强，反过来向中国输出佛教。<strong>“佛教乃哲学，又乃宗教。”</strong>这一时下非常流行的论断，就出自跟东本愿寺关系很深的佛学家村上专精之口。而村上氏关于佛教是哲学的理论，于 20 世纪初又传到了中国，被发扬开来。1920 年蔡元培在厦门南普陀闽南佛学院的演讲中，就称”佛学即科学，佛教即宗教”。当时的中国也处在内忧外患和西方思想的冲击下。在一开始的直接抵制行不通的情况下，时人也走上了企图用本土思想将外来思想内部消化掉的路子。儒家消化不了的，就拉佛教来消化。尤其是儒家不太擅长的逻辑和名相思辨上，佛教正好有因明学和唯识学可以用来套。宇宙星辰科以靠佛经的想象来描绘，生物学观察可以从佛经里挖出想象和比喻来解释。</p>
+<p>光绪十五年（1889）宋恕在七宝寺写了《印欧学证》，<strong>说佛之”无量日月”，”风轮持地轮”、”人身八万虫”，就是西洋人在望远镜和显微镜下看到的天体和细菌。</strong>文廷式读到《阿毗达摩集异门足论·三法品》中”<strong>电光喻心</strong>”一则，就高兴地认为”<strong>余谓心与电为类，此说可证</strong>”。谭嗣同就说：”佛能统孔、耶”，可以”<strong>极地球上所有群教群经诸子百家，虚如名理，实如格致……无不异量而兼容，殊条而共贯</strong>”。（是不是比时下好多言论都气派多了！）当孙宝瑄在 1898 年看完了《华严经》后，更欢喜地发现，原来佛经里什么都有，”<strong>所谓技艺，无论天算、格致、化学、质学、光学、声学、医学、农学、工学、矿学及种种技能，包括无遗</strong>。”他认为西学里所说的星团、星气、螺旋白云、天河诸星，就是《华严经》里所说的”<strong>或作江河形，或作回转形</strong>”；而西学里说到的地球外有大气层，就是《华严经》中的”<strong>风轮持水轮，水轮持地轮</strong>。”；而佛教说的地狱之中的极热，就是热度不下三千度的地心。</p>
+<p>消化完科学，他们又开始用佛教来消化西洋哲学。文廷式用佛陀来比附康德，用龙树来比附莱布尼茨，用马鸣来想象斯宾诺莎，更以佛教经典来解读柏拉图的《会话篇》。梁启超以佛教”真如”思考康德的”真我”，以佛教”无明”来理解康德的”现象之我”，在他看来，”康氏哲学大近佛学”。世纪之交中国的思想家，竟然都不约而同地开始关注佛教，中国的佛学竟然在西潮的冲击下，有了一线复兴的希望。</p>
+<p><strong>这些在今天看来荒唐可笑，牵强附会的比附，在当时救亡图存，西学东渐的时代背景下却有着积极的意义。我们用佛教来比附西学，再反哺出来，这使得从来没有接触过西学的国人能够在更熟悉的知识背景下，消化和理解西洋科学和哲学，虽然可能是走了样的，但好歹也是促进了这些新思想的传播。</strong>等到我们真正理解西洋科学和哲学时，这一”拐杖”就不需要了，所谓”新人进了房，媒人扔过墙”。在这之后，佛教失去了利用价值，又再次陷入了低潮。<strong>佛教徒本来想趁此机会自家崛起，成为西洋科学和哲学的掌门人，却出人意料地让两者乘虚而入，反而失了自己的地盘。</strong></p>
+<p>但佛教好歹也还是趁此风头，风光了 10 年。1920 年，31 岁的太虚，肩负起了复兴佛教的佛教新运动的重任。他和同仁创办《海潮音》月刊，对内改革丛林制度，提倡讲学，整理佛典，修正教律；对外积极宣传佛教教义，参加政治运动。正好在这个时候，西方哲学家开始抨击物质主义，倡导精神人生，开始赞赏起东方哲学来。1919 年，梁启超就告诉中国人：”<strong>我们人类不惟没有得到幸福，倒反带来许多灾难……欧洲人作了一场科学万能的大梦，到如今却叫起科学破产来</strong>。”由此佛教便成为国人拯救现代人心灵的一剂良药，”<strong>世界和平，将以是（佛教）为基础，科学致用，将以是（佛教）为准绳，而吾国人亦将端视听而显良知，脱危途而归安宅矣</strong>。”</p>
+<p>佛教新运动是从”佛法”本位来融摄一切。一方面试图以”唯识”分析法门包容与代替科学逻辑体系重建人的经验途径，一方面试图以”心真如为本”设立一个超越物质主义、道德主义的终极价值体系，重建人的精神家园。他们认为佛教能涵盖并超越科学，说”学各种科学断不碍学佛”，而佛学也”须得开采之方而后济于大用，方之维何？科学是也”。不过他们也强调”<strong>佛法之精密思想于科学实有过之而无不及</strong>”，因为”科学虽有种种差别，然归纳于一句言之，思想精密，有条不紊。然而佛法之精密则驾乎其上也。”他们认为科学以常识和经验为基础，就如同建屋沙上。而佛教以超越无我的本原来观照一切，就超越了常识成为智慧。觉得如果能以唯识学重新阐释科学，可以”使科学之根据确凿者将益发挥广大”,”科学之根据错误者皆将摇动摧灭。”佛教新运动非常注重唯识学的运用，觉得唯识学是佛教的精华，能使人”转识成智，佛性复原。”</p>
+<p><strong>但恰恰是在”转识成智”这四个字中，蕴含了佛教新运动内在理路上的根本缺失，这种缺失的严重性足以使佛教新运动的复兴希望在一开始就注定要自我消解。</strong>信仰给人以自信心和安定感，有一种无须论证的自明性和绝对性。而思想则给人以思考和行动的方式，必须通过方法、规范和制度不断地物化为可操作的形式，又必须通过操作的结果不断论证自身的正确性和可行性。佛教能转识成智，却不能由智生识，介入现实世界；它能建立一个自我完善的理论体系，却不能从中开出一套对于现实世界的实践方式。一种宗教若是只强调”信仰”倒也罢了，若要以这种信仰来解决人生一切现实问题，未免不切实际。唯识学步步推进却仍是朝着内心对宇宙人生的体悟，并无法提供解决现实世界问题的策略。把一切建筑在”自内而证”的内心上，清净澄明的理性属于自身，因而再也不含有狂热信仰和真挚崇敬，于是佛教自己瓦解了自己的基石。</p>
+<p>从”终极关怀”到”社会实践”，始终有一条宗教难以跨越的鸿沟。所以终究是科学一直引领着社会的真正变革和进步。1930 年浙大教授邰爽秋拟定方案，政府内长提议实施的”提庙产兴学”似乎又把佛教推到了岌岌可危的境地。太虚写下《告徒众书》痛恨”余十年来有计划有组织有纪律之佛法救世运动乃为之根本摧破”。1931 年，太虚辞职，慨叹”时不我与，其命也夫“。十年佛教新运动告终。</p>
+<p>所谓”太阳底下并无新事“，历史无非在不断循环上演，几百年前的论调仍然旧瓶装新酒似的，不断在我们面前出现。当年提出这些论调的人，尚有代国人消化西学，救亡图存的鸿鹄之志。试问当下提出这些论调的人，又有什么样的雄心壮志呢？他们读佛经么？通佛法么？懂科学么？会哲学么？</p>
+<p>实在是不足以语。</p>
+</div>
+</div>
+<hr>
+</section><nav id="post-nav"><span class="prev"><a href="/2019/09/19/知乎日报长期服用维生素 C 是否会美白？/"><span class="arrow">←</span>Newer Posts</a></span><span class="next"></span></nav></article></section><footer id="footer"><div id="social"><a class="symbol" href="https://github.com/fuzhouxxdong"><i class="fa fa-github"></i></a></div><p class="small">© Copyright 2018 &nbsp;<i class="fa fa-heart" aria-hidden="true">&nbsp;Dxx</i></p><p class="small">Powered by &nbsp;<a href="https://hexo.io/">Hexo &nbsp;</a>Theme By &nbsp;<a href="https://github.com/fuzhouxxdong/hexo-theme-dxx">Dxx</a></p></footer><script>hljs.initHighlightingOnLoad();</script></body></html>
